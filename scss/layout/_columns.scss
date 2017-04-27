@@ -1,0 +1,29 @@
+/*****************
+Columns
+*****************/
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+	margin-bottom: 50px;
+	@media (min-width: $break-m) {
+		& {
+			width: 45%;
+		  	padding-right: 2.5%;
+		  	padding-left: 2.5%;
+		  	height: 325px;
+		  	margin-bottom: 30px;
+		}
+	}
+	@media (min-width: $break-l) {
+		& {
+			width: 30%;
+		  	padding-right: 1.6%;
+		  	padding-left: 1.6%;
+		}
+	}
+}
+
+@media (min-width: $break-m) {
+  .col {
+  	float: left;
+  }
+}

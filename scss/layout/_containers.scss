@@ -1,0 +1,57 @@
+/*****************
+Containers
+*****************/
+
+
+.portfolio-heading {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.contact-heading {
+	padding-top:  60px;
+}
+
+.container {
+	@extend %clearfix;
+	padding-right: .7em;
+	padding-left: .7em;
+	@media (min-width: $break-m) {
+	    & {
+  	       width: 90%;
+  	       margin: 0 auto;
+        }
+	}
+	@media (min-width: $break-l) {
+	    & {
+  	        width: 80%;
+		    margin: 0 auto;
+		    max-width: 1150px;
+        }
+	}
+}
+
+/*****************
+Containers - footer
+*****************/
+
+
+.foot-container {
+	@extend %clearfix;
+	border-top: 1px solid lightgrey;
+	margin-top: 75px;
+}
+
+
+/*****************
+experience
+*****************/
+
+.experience-info {
+	margin-top: 60px;
+	p {
+		@include font-format(1.3em, 300);
+		padding-top: 30px;
+    }
+}
+

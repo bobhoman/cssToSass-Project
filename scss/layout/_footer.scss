@@ -1,0 +1,50 @@
+
+/*****************
+footer
+*****************/
+
+footer {
+	@extend %secondary-background;
+	margin-top: 35px;
+}
+
+
+.contact-info p, .contact-info ul, .contact-info a {
+	color: $grey;
+}
+
+.contact-info {
+	@media (min-width: $break-m) {
+		& p {
+			@include font-format(1.3em);
+		  	width: 80%;
+		  	margin: 30px auto;
+		}
+	}
+	@media (min-width: $break-l) {
+		.contact-heading {
+    	    padding-top: 22px;
+        }
+	}
+}
+
+ul.contact-ul {
+	padding-left: 0;
+	li {
+	  margin-bottom: 15px;
+	  text-align: center;
+    }
+    a {
+	  padding-left: 11px;
+	  font-weight: bold;
+    }
+    @media (min-width: $break-m) {
+    	& {
+		  	text-align: center;
+		  	font-size: 1.3em;
+		}
+    }
+}
+
+
+

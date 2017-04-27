@@ -1,0 +1,86 @@
+/*****************
+Header Navigation
+*****************/
+
+.nav-container {
+	@extend %clearfix;
+}
+
+.name {
+	@extend %center;
+	margin-bottom: 0;
+	color: $black;
+	@media (min-width: $break-l) {
+		& {
+			float: left;
+		}
+	}
+}
+
+
+.main-nav {
+    padding-left: 0;
+	a {
+	display: block;
+	@extend %center;
+	padding: 10px 15px;
+	@include font-format(1rem, 600, $black);
+	&:hover {
+	  color: $grey;
+	}
+  }
+  @media (min-width: $break-m) {
+  	& {
+  		text-align: center;
+  	}
+  	li {
+  		display: inline-block;
+  	}
+  }
+  @media (min-width: $break-l) {
+  	& {
+  		float: right;
+  	}
+  }
+}
+
+
+/*****************
+footer nav
+*****************/
+
+
+
+.footer-name {
+	float: left;
+}
+
+.footer-nav {
+	float: right;
+	li.footer-nav-item {
+		display: none;
+	}
+	& a:hover {
+	color: $grey;
+    }
+    @media (min-width: $break-m) {
+    	li.footer-nav-item {
+			display: inline-block;
+	        padding-left: 20px;
+	        font-weight: 600;
+	    }
+	    li.back-to-top {
+	    	display: none;
+	    }
+    }
+}
+
+
+/*
+.footer-nav li {
+	display: inline-block;
+}*/
+
+
+
+

@@ -1,0 +1,7 @@
+/************ MIXINS *************/
+
+@mixin font-format($font-s, $font-w:null, $font-c:null) {
+	font-size: $font-s;
+	font-weight: $font-w;
+	color: $font-c;
+}
